@@ -7,7 +7,7 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="Credit">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/admin-login" element={<AdminLogin />} />
