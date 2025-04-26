@@ -66,6 +66,6 @@ app.post('/transaction', async (req, res) => {
 
 // Start server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {  // Bind to 0.0.0.0 for Render
   console.log(`Server running on port ${PORT}`);
 });
